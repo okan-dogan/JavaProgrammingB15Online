@@ -33,7 +33,6 @@ public class RepresentingTableData {
         rowMapLst.add(row1);
         rowMapLst.add(row2);
 
-
         System.out.println("rowMapLst = " + rowMapLst);
         // How do I get 2nd row email column value
         System.out.println("rowMapLst.get(1).get(\"email\") = "
@@ -44,6 +43,8 @@ public class RepresentingTableData {
         System.out.println("rowMapLst = " + rowMapLst);
         rowMapLst.get(0).put("first_name", "Jane");
         System.out.println("rowMapLst = " + rowMapLst);
+
+        // HOMEWORK : FILL UP THIS LIST OF MAP USING FILE DATA
 
 
     }
