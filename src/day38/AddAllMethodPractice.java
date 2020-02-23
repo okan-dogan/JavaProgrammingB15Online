@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class AddAllMethodPractice {
 
+
     public static void main(String[] args) {
 
         ArrayList<Integer> nums1 = new ArrayList<>();

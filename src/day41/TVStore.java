@@ -16,8 +16,12 @@ public class TVStore {
         t1.turnOn();
         t1.setCurrentChannel(5);
         System.out.println("TV1 = "+t1.toString());
+        t1.setCurrentChannel(121);
+        t1.turnOff();
+        System.out.println(t1.toString());
 
-       // System.out.println(t1.getCurrentChannel());
+
+        // System.out.println(t1.getCurrentChannel());
 
 
     }

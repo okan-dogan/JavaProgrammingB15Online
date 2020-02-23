@@ -28,7 +28,16 @@ public class TV {
         return currentChannel;
     }
 
+    // we can not set a channel if the TV is off!!!
+    // valid channel is from 0-50
     public void setCurrentChannel(int newChannel){
+
+        // if my channel is out of range i want to exit from the method
+        if(newChannel<0 || newChannel>50){
+            System.out.println("INVALID CHANNEL, GETTING OUT");
+            return;
+        }
+
         if(isOn==true){
             currentChannel=newChannel;
         }else {
@@ -48,7 +57,7 @@ public class TV {
 
         // if(isOn){ // this will also
         if (isOn == true) {
-
+            currentChannel=0;
             System.out.println("Turning off TV");
             isOn = false;
         }
